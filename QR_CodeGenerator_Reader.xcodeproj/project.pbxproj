@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E130FCE23FAA33000253CAB /* QR_CodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E130FCD23FAA32F00253CAB /* QR_CodeGeneratorViewController.swift */; };
 		5E141FF523E458490011474B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E141FF423E458490011474B /* AppDelegate.swift */; };
 		5E141FF723E458490011474B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E141FF623E458490011474B /* SceneDelegate.swift */; };
 		5E141FF923E458490011474B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E141FF823E458490011474B /* ViewController.swift */; };
 		5E141FFC23E458490011474B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E141FFA23E458490011474B /* Main.storyboard */; };
 		5E141FFE23E4584D0011474B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E141FFD23E4584D0011474B /* Assets.xcassets */; };
 		5E14200123E4584D0011474B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E141FFF23E4584D0011474B /* LaunchScreen.storyboard */; };
+		5E14200923E45CC20011474B /* QRCodeScanner_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E14200823E45CC20011474B /* QRCodeScanner_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E130FCD23FAA32F00253CAB /* QR_CodeGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_CodeGeneratorViewController.swift; sourceTree = "<group>"; };
 		5E141FF123E458490011474B /* QR_CodeGenerator_Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR_CodeGenerator_Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E141FF423E458490011474B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E141FF623E458490011474B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5E141FFD23E4584D0011474B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E14200023E4584D0011474B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E14200223E4584D0011474B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E14200823E45CC20011474B /* QRCodeScanner_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				5E141FF423E458490011474B /* AppDelegate.swift */,
 				5E141FF623E458490011474B /* SceneDelegate.swift */,
 				5E141FF823E458490011474B /* ViewController.swift */,
+				5E14200823E45CC20011474B /* QRCodeScanner_ViewController.swift */,
+				5E130FCD23FAA32F00253CAB /* QR_CodeGeneratorViewController.swift */,
 				5E141FFA23E458490011474B /* Main.storyboard */,
 				5E141FFD23E4584D0011474B /* Assets.xcassets */,
 				5E141FFF23E4584D0011474B /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 				5E141FF923E458490011474B /* ViewController.swift in Sources */,
 				5E141FF523E458490011474B /* AppDelegate.swift in Sources */,
 				5E141FF723E458490011474B /* SceneDelegate.swift in Sources */,
+				5E14200923E45CC20011474B /* QRCodeScanner_ViewController.swift in Sources */,
+				5E130FCE23FAA33000253CAB /* QR_CodeGeneratorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +292,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JPEXCF6R6;
 				INFOPLIST_FILE = QR_CodeGenerator_Reader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ecknologic.QR-CodeGenerator-Reader";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnet.itsupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IT_SUPPORT_DEV;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,14 +312,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JPEXCF6R6;
 				INFOPLIST_FILE = QR_CodeGenerator_Reader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ecknologic.QR-CodeGenerator-Reader";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnet.itsupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IT_SUPPORT_DEV;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
